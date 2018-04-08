@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pixel Art Maker!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Pixel Art Maker</h1>
+
+        <h2>Choose Grid Size</h2>
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="10">
+            Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="10">
+            <input type="submit">  <!-- onclick="makeGrid()" Submit Button -->
+        </form>
+
+        <div class='flexContainer'>
+            <div class='flexChild'>
+                <h2>Pick A Color</h2>
+                <input type="color" id="colorPicker">
+            </div>
+            <div class='flexChild'>
+                <h2>Remove All Color</h2>
+                <button id="eraser">Eraser</button>
+            </div>                
+        </div>
+        
+        <h2>Design Canvas</h2>
+        <p>Click and drag, or simply click to add the selected color to cells</p>
+        <table id="pixelCanvas"></table>
+
+        <script src="designs.js"></script>
+    </body>
+</html>
